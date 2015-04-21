@@ -1,0 +1,39 @@
+@import "_bootstrap";
+
+.page-header{  
+  padding-top: 10px;
+  padding-bottom: 25px;
+  margin: 0px 0 25px 0;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.ad-top {
+    display: block;
+    margin-top:50px;
+}
+
+.page-capa {
+  background-size: cover;
+  background-position: 50% 50%; 
+}
+
+.page-footer{  
+  padding-top: 25px;
+  margin: 9px 0 20px;
+  border-top: 1px solid #eeeeee;
+}
+
+@media (max-width: 970px) {
+    .ad-top {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .ad-top {
+        display: none;
+    }
+}
