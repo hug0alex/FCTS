@@ -1,7 +1,15 @@
 @import "_bootstrap";
 
+.container {
+  max-width: none !important;
+  width:1280px;
+}
+
+.page-header {
+  min-width:1280px;
+}
+
 .page-header{  
-  padding-top: 10px;
   padding-bottom: 25px;
   margin: 0px 0 25px 0;
 }
@@ -24,16 +32,142 @@
   padding-top: 25px;
   margin: 9px 0 20px;
   border-top: 1px solid #eeeeee;
+  min-width:1280px;
+  clear: both;
 }
 
-@media (max-width: 970px) {
-    .ad-top {
-        margin-top: 20px;
+#carousel-destaque{
+  border-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.feed-news{
+ margin: 20px 20px 0 20px;   
+}
+
+#sidebar {
+    padding: 40px;   
+}
+
+.form-search {
+    width: 82%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #555555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s; 
+}
+
+.form-enquete {
+    padding: 20px;   
+}
+
+.row .row {
+    padding: 5px;   
+}
+
+.next {
+    font-size: 50px;   
+}
+
+.galeria {
+    position: relative;
+    clear: both;
+    padding: 40px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.25) 0px, transparent 100%) repeat scroll 0% 0%, #333 url("../../images/shared/noise-2.png") repeat scroll center center;
+    box-shadow: 0px 1px 0px rgba(255, 255, 255, 0.9), 0px 1px 3px rgba(0, 0, 0, 0.6) inset;
+    font-size: 12px;
+    color: #CCC;
+    text-shadow: 0px 1px 3px #000;
+    
+    h2 {
+        color: #fff;   
     }
-}
-
-@media (max-width: 750px) {
-    .ad-top {
-        display: none;
+    
+    ul {  
+        z-index: 50;
+        overflow: hidden;
+        box-shadow: 0px 1px 3px #000;
+        position: relative;
+        padding: 0px;
+        margin: 0px auto;
+        max-width: none;
+    }
+        
+    img {
+        width: 100%;
+        transition: opacity 0.1s linear 0s;
+        display: block;
+        height: auto; 
+    }
+    
+    li {
+        position: absolute;
+        background: #000 none repeat scroll 0% 0%;
+        z-index: 98;
+        width: 16.8%;
+        display: inline-block;
+        margin: 0px;
+        list-style: outside none none;
+    }
+    
+    li.photo-1 {
+        width: 33.3333%;   
+        position: relative;
+        float: left;
+    }
+    
+    li.photo-2 {
+        left: 33.3333%;   
+    }
+    
+    li.photo-3 {
+        right: 33.3333%;
+    }    
+    
+    li.photo-4 {
+        right: 16.6667%;   
+    }
+    
+    li.photo-5 {
+        right: 0px;
+    } 
+    
+    li.photo-6 {
+        left: 33.3333%;  
+        bottom: 0px;
+    }
+    
+    li.photo-7 {
+        right: 33.3333%;
+        bottom: 0px;
+    }    
+    
+    li.photo-8 {
+         right: 16.6667%;   
+        bottom: 0px; 
+    }
+    
+    li.photo-9 {
+        bottom: 0px; 
+        right: 0px;
+    }
+    
+    a {
+        display: block;
+        position: relative;   
+    }
+    
+    figure {
+        margin: 0px;
     }
 }
